@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+    Note right of browser: The browser renders spa page
